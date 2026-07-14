@@ -8,6 +8,19 @@ human validates.
 This is the reusable **engine** extracted from a production AI product built over 100+ sessions. It is
 packaged here, not simplified.
 
+## Who this is for
+
+Engineers running long-lived, AI-assisted software projects — on Claude Code or any other agent —
+who want the model's output governed, independently reviewed, and committed only after a human validates it.
+
+## Quick start (in 3 steps)
+
+1. **Copy `templates/` into your project** and write your `DOCTRINE.md` first.
+2. **Install the `skills/` for your agent** (e.g. Claude Code) — leave them as-is; they are the reusable engine.
+3. **Start your first session** with `Initiating S1 Design`.
+
+Full walkthrough: [`docs/getting-started.md`](docs/getting-started.md).
+
 ## The one property that defines it
 
 > **Single Gated Writer.** Exactly one skill — `session-wrap` — mutates durable project state, and it
